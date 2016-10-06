@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Lapizza</title>
+</head>
+<body>
+	<header>
+	
+		<div class="container">
+			<h1>Selector de ingredients</h1>
+		</div>
+		
+	</header>
+		<div class="container">
+
+			<section class="main row">
+			
+				<article class="col-xs-12 col-sm-8 col-md-9 col-lg-9"> 
+
+				<h3> Crea la teva pizza </h3>
+				
+					<p>
+						Seleciona els ingredients que desitxis utilitzar a la teva pitza
+
+					</p>
+
+				</article>
+
+				<aside class="col-xs-12 col-sm-4 col-md-3 co-lg-3"> 
+
+				
+				<img src="https://encrypted-tbn0.gstatic.com/mages?q=tbn:ANd9GcQUjUI9b-eriPIEMP8UEKPd-IT7DIxxuegGt8e7eyD3F4m9lQilzQ">
+
+			</aside>
+
+
+
+			</section>
+
+			</br><p>Tria els ingredients:</p>
+
+
+			 <form action="llistar_ingredients.php" method="get" id="myform" name="myform">
+			  
+			  <div class="checkbox">
+			    <label><input name="IMassa" type="checkbox" > Massa</label>
+			    <label><input name="ITomaquet" type="checkbox"> Tomaquet</label>
+			    <label><input name="IOrenga" type="checkbox" > Orenga</label>
+			    <label><input name="IFormatge" type="checkbox"> Formatge</label>
+			    <label><input name="IPollastre" type="checkbox"> Pollastre</label>
+			    <label><input name="IPebrot" type="checkbox"> Pebrot</label>
+			    <button type="submit" class="btn btn-default">Submit</button>
+			  </div>
+			</form>
+
+		</div>
+
+	<footer>
+		<div class="container-fluid">
+			<h3>Footer</h3>
+
+		</div>
+
+	</footer>
+	
+
+	<script src="js/jquery.js"></script>
+</body>
+</html>
+
+

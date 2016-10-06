@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style type="text/css">
+		
+	
+		b{color: red;}
+		th,td{background: blue;}
+
+	</style>
 </head>
-<body>
-	<table border="1"; border-collapse: collapse;>
+	<table>
 	<tr>
 	<th>Dilluns</th>
 	<th>Dimarts</th>
@@ -17,20 +23,26 @@
 	</tr>
 
 		<?php
-		echo date("F");; 
-
+		
 		$numdia = 1;
 		$month=date("n");
+		$dias=array("Diumenge","Dilluns","Dimarts","Dimecres","Dijous","Divendres", "Dissabte"); 
+		$mesos=array("Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost", "Setembre","Octubre","Novembre","Desembre");
 		$year=date("Y");
 		$day = date("d");
 		$numtotalmes = date("d",(mktime(0,0,0,$month+1,1,$year)-1));
 		$diaSemana=date("w",mktime(0,0,0,$month,1,$year));
-		//echo $diaSemana;
+		echo "<p>".$mesos[$month-1]."</p>";
 		$diainici = 1;
+
+		//echo date("F");; 
 		//echo date("Y");
 		//$diaavui =  date(string $format [, int $timestamp = time() ] );
 
-for ($i=0; $i < 5; $i++) { 
+for ($t=0; $t < 7; $t++) { 
+	echo $mesos[date('t')-1];
+}
+for ($i=0; $i < 6; $i++) { 
 	echo "<tr>";
 	for ($y=0; $y  < 7; $y++) { 
 		if ($diainici != $diaSemana) {
